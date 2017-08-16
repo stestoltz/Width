@@ -194,6 +194,7 @@ commands (27 of them):
 0 duplicate ToS
 1 swap ToS and previous
 2 delete ToS
+
 3 input string
 4 input number
 5 to float
@@ -201,8 +202,9 @@ commands (27 of them):
 7 to string
 8 negation
 9 not
+
 10 plus
-11 mins
+11 minus
 12 divide
 13 int div
 14 times
@@ -218,4 +220,20 @@ commands (27 of them):
 24 index
 25 repeat
 26 exit
+
+27 sort stack
+28 reverse stack
+29 swap bottom of stack and top of stack
+30 error
+31 split ToS by ""
+32 height of stack
+33 sum of numbers in stack
+34 product of numbers in stack
+35 put stack on backburner
+36 pull stack from backburner, put on bottom
+37 pull stack from backburner, put on top
+38 split ToS by ", "
+39 is prime
+40 is fib
+
 """
