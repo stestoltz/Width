@@ -1,0 +1,134 @@
+0: i j l                     # do while counter > 0
+1: f r t I                   # end
+2: c k s v x y z J           # 0 in commands
+3: a b d e g h n o p q u L   # separator (no-op)
+4: F T Z                     # push base 10 number, using left side row titles (width numbers); terminated with original char
+5: A B E K P S V X Y         # 1 in commands
+6: w C D H N R U             # 2 in commands
+7: G O Q                     # push string literal; sets of 2 width numbers equate to index in printable ASCII; terminated with original char
+8: m M                       # if top of stack
+9: W                         # else
+
+0 duplicate ToS
+1 swap ToS and previous
+2 delete ToS
+
+00 set counter to read ToS
+01 push height of stack
+02 input string
+10 input number
+11 to string
+12 to int
+20 inc counter
+21 dec counter
+22 pop and output
+
+000 to float
+001 negation
+002 not
+010 plus
+011 minus
+012 divide
+020 int div
+021 times
+022 mod
+100 factorial
+101 concat
+102 power
+110 root
+111 log n
+112 bitwise not
+120 bitwise or
+121 bitwise and
+122 left shift
+200 right shift
+201 index
+202 repeat
+210 push counter
+211 set counter to pop ToS
+212 split ToS by ""
+220 swap ToS and bottom
+221 length of read
+222 read and output
+
+0000 reverse stack
+0001 sort stack
+0002
+0010
+0011
+0012
+0020 sum of numbers in stack
+0021 product of numbers in stack
+0022
+0100 pop stack to backburner
+0101 push stack from backburner to top of stack
+0102 push stack from backburner to bottom of stack
+0110 pop ToS to backburner
+0111 pop ToS to backburner split on ""
+0112 pop ToS to backburner split on y
+0120
+0121
+0122
+0200 join stack on ToS
+0201 join stack on ""
+0202 join y deep into stack on ToS
+0210 join ToS deep into stack on ""
+0211
+0212
+0220 split ToS by y
+0221 split ToS by ", "
+0222
+1000 is prime
+1001
+1002
+1010
+1011
+1012
+1020
+1021
+1022
+1100
+1101
+1102
+1110
+1111
+1112
+1120
+1121
+1122
+1200 set counter to read ToS
+1201
+1202
+1210
+1211
+1212
+1220
+1221
+1222
+2000 floor
+2001 ceil
+2002 round
+2010 abs
+2011
+2012
+2020 length of pop
+2021
+2022
+2100
+2101
+2102
+2110
+2111
+2112
+2120
+2121
+2122
+2200
+2201
+2202
+2210
+2211
+2212
+2220
+2221 output read ToS
+2222 error
