@@ -42,7 +42,7 @@
 121 bitwise and
 122 left shift
 200 right shift
-201 index
+201 index ( second [ ToS ] )
 202 repeat
 210 push counter
 211 set counter to pop ToS
@@ -66,9 +66,9 @@
 0110 pop ToS to backburner
 0111 pop ToS to backburner split on ""
 0112 pop ToS to backburner split on y
-0120
-0121
-0122
+0120 read top of backburner
+0121 pop first ToS stack to backburner
+0122 pop last ToS stack to backburner
 0200 join stack on ToS
 0201 join stack on ""
 0202 join y deep into stack on ToS
@@ -79,7 +79,7 @@
 0221 split ToS by ", "
 0222
 1000 is prime
-1001
+1001 is palindrome
 1002
 1010
 1011
@@ -87,24 +87,24 @@
 1020
 1021
 1022
-1100
-1101
-1102
-1110
-1111
-1112
-1120
-1121
-1122
-1200 set counter to read ToS
-1201
+1100 ==
+1101 !=
+1102 >
+1110 <
+1111 >=
+1112 <=
+1120 pop in stack
+1121 pop in backburner
+1122 pop == counter
+1200 ToS in second
+1201 second.find( ToS )
 1202
 1210
 1211
-1212
-1220
-1221
-1222
+1212 lower
+1220 upper
+1221 ord
+1222 chr
 2000 floor
 2001 ceil
 2002 round
@@ -114,19 +114,19 @@
 2020 length of pop
 2021
 2022
-2100
-2101
-2102
-2110
+2100 min of stack
+2101 max of stack
+2102 count of ToS in stack
+2110 average of stack
 2111
 2112
 2120
 2121
 2122
-2200
-2201
-2202
-2210
+2200 replace all second in third by ToS
+2201 replace first second in third by ToS
+2202 remove all ToS in second
+2210 remove first ToS in second
 2211
 2212
 2220
