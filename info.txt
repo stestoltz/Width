@@ -53,8 +53,8 @@
 
 0000 reverse stack
 0001 sort stack
-0002
-0010
+0002 stack [ counter ] !
+0010 stack [ ToS ] !
 0011
 0012
 0020 sum of numbers in stack
@@ -80,13 +80,13 @@
 0222
 1000 is prime
 1001 is palindrome
-1002
-1010
-1011
-1012
-1020
-1021
-1022
+1002 1 / ToS !
+1010 1 - ToS !
+1011 1 + ToS !
+1012 2 * ToS !
+1020 ToS / 2 !
+1021 ToS ^ 2 !
+1022 .ToS
 1100 ==
 1101 !=
 1102 >
@@ -118,9 +118,9 @@
 2101 max of stack
 2102 count of ToS in stack
 2110 average of stack
-2111
-2112
-2120
+2111 prefixes of stack !
+2112 suffixes of stack !
+2120 deltas of stack !
 2121
 2122
 2200 replace all second in third by ToS
@@ -128,7 +128,7 @@
 2202 remove all ToS in second
 2210 remove first ToS in second
 2211
-2212
-2220
+2212 push python eval ToS
+2220 push python eval input
 2221 output read ToS
 2222 error
