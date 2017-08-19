@@ -1,5 +1,5 @@
 # Width
-Stack-based esoteric programming language based on character widths
+Width is a stack-based esoteric programming language solely based on letter widths.
 
 The only valid commands in Width are the letters of the alphabet, uppercase and lowercase. All other characters are stripped out of the source and ignored.
 
@@ -69,7 +69,7 @@ Dm = 68 = d
 if = 01 = !
 ```
 
-#Number Literals
+# Number Literals
 
 Number literals are formed very similarly to string literals. Note that you cannot push negative literals or float literals, only positive integers - you'll have to use commands (subtraction, negation, and/or division, see below) to form those.
 
